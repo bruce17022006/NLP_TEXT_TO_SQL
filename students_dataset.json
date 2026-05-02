@@ -1,0 +1,774 @@
+[
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Sneha and marks > 83 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha' AND marks > 83;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: retrieve all students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 60 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 60;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 55 and 94 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 55 AND 94;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than or equal to 88 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <= 88;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 46 and 82 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 46 AND 82;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 9 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 9 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: count students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT COUNT(*) FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 56 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 56;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 61 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 61;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than or equal to 81 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks >= 81;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than or equal to 47 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks >= 47;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list all students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Arun and marks > 51 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Arun' AND marks > 51;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than 43 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks > 43;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 26 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 26;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than or equal to 68 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <= 68;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 70 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 70;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 43 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 43;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 55 and 98 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 55 AND 98;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Priya and marks > 78 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Priya' AND marks > 78;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 46 and 96 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 46 AND 96;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 57 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 57;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 3 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 3 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 76 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 76;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks = 76 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 76;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 4 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 4;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 78 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 78;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: count students in each department | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student dept_id | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks > 84 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks > 84;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 2 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 10 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 10;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks = 58 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 58;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 7 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 7;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 2 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 2;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Sneha and marks > 69 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha' AND marks > 69;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 66 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 66;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than 60 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks < 60;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 58 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 58;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 83 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 83;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 36 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 36;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 85 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 85;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 64 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 64;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 30 and 89 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 30 AND 89;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 54 and 74 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 54 AND 74;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 49 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 49;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks <= 59 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <= 59;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks != 79 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks != 79;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student where name is Sneha | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 93 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 93;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 7 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 7;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get all students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 38 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 38;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 80 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 80;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Karthik and marks > 74 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Karthik' AND marks > 74;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks equal to 71 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 71;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 48 and 88 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 48 AND 88;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 31 and 71 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 31 AND 71;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 36 and 89 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 36 AND 89;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 21 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 21;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 63 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 63;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 33 and 83 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 33 AND 83;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 68 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 68;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 30 and 81 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 30 AND 81;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 54 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 54;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 53 and 97 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 53 AND 97;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 88 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 88;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: how many students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT COUNT(*) FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 71 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 71;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 41 and 95 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 41 AND 95;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 6 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 6;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 9 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 9;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 46 and 87 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 46 AND 87;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 95 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 95;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 72 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 72;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 17 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 17;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 45 and 75 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 45 AND 75;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks not equal to 55 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <> 55;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks <= 42 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <= 42;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 84 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 84;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT COUNT(*) FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 45 and 86 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 45 AND 86;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 76 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 76;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 75 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 75;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 82 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 82;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 23 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 23;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than or equal to 43 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks >= 43;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 31 and 88 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 31 AND 88;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 4 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 4 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: sort students by marks descending | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than 48 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks > 48;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than 41 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks > 41;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks not equal to 81 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <> 81;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than or equal to 92 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks >= 92;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 40 and 99 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 40 AND 99;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks <> 55 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <> 55;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student age | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT age FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks equal to 88 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 88;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 46 and 74 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 46 AND 74;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 25 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 25;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 10 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 10 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than 78 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks < 78;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 70 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 70;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 10 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 10;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Sneha and marks > 88 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha' AND marks > 88;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks = 72 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 72;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 75 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 75;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 16 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 16;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 69 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 69;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 52 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 52;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 5 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 5 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than 65 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks < 65;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 46 and 90 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 46 AND 90;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student where name is Priya | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Priya';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 66 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 66;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 2 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 2;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks <> 52 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <> 52;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 85 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 85;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 89 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 89;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 97 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 97;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks = 92 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 92;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 63 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 63;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks not equal to 71 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks != 71;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 49 and 93 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 49 AND 93;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 35 and 82 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 35 AND 82;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 44 and 74 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 44 AND 74;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Sneha and marks > 84 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha' AND marks > 84;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 40 and 91 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 40 AND 91;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 40 and 95 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 40 AND 95;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 1 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 52 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 52;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than 94 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks > 94;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 29 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 29;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 56 and 79 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 56 AND 79;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than 81 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks < 81;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 46 and 71 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 46 AND 71;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 5 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 5;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT marks FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 78 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 78;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student name | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 55 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 55;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks not equal to 95 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks != 95;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 48 and 80 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 48 AND 80;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 60 and 81 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 60 AND 81;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 24 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 24;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks equal to 53 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 53;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 48 and 79 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 48 AND 79;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks not equal to 86 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <> 86;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than or equal to 44 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <= 44;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks equal to 95 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 95;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 6 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 6;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Karthik and marks > 51 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Karthik' AND marks > 51;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names where marks > 53 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name FROM Students WHERE marks > 53;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Manoj and marks > 62 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Manoj' AND marks > 62;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 96 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 96;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 100 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 100;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 91 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 91;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 77 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 77;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks <= 72 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks <= 72;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 6 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 6 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 45 and 92 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 45 AND 92;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 8 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 8;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 34 and 92 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 34 AND 92;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 49 and 80 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 49 AND 80;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Sneha and marks > 73 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha' AND marks > 73;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show all student details | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks equal to 63 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks = 63;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: departments having more than 3 students | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT dept_id, COUNT(*) FROM Students GROUP BY dept_id HAVING COUNT(*) > 3;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 45 and 78 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 45 AND 78;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 8 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 8 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 34 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 34;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 72 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 72;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than or equal to 48 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks >= 48;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 1 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 1;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 52 and 90 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 52 AND 90;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get name and marks where marks >= 74 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT name, marks FROM Students WHERE marks >= 74;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student where name is Arun | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Arun';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student names with department names | Tables:\nStudents: id, name, marks, dept_id, age\nDepartments: dept_id, dept_name",
+        "output": "SELECT Students.name, Departments.dept_name FROM Students JOIN Departments ON Students.dept_id = Departments.dept_id;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 33 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 33;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student with id 48 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE id = 48;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 60 and 90 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 60 AND 90;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 40 and 87 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 40 AND 87;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks less than 69 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks < 69;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Sneha and marks > 60 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Sneha' AND marks > 60;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 45 and 96 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 45 AND 96;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks < 55 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks < 55;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 49 and 98 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 49 AND 98;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where name is Manoj and marks > 70 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Manoj' AND marks > 70;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get student where name is Manoj | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students where marks greater than or equal to 71 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks >= 71;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 7 students by marks | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT TOP 7 * FROM Students ORDER BY marks DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get students with marks between 37 and 93 | Tables:\nStudents: id, name, marks, dept_id, age",
+        "output": "SELECT * FROM Students WHERE marks BETWEEN 37 AND 93;"
+    }
+]

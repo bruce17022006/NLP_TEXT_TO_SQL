@@ -1,0 +1,19 @@
+# 🔥 Ignore trained model
+fine_tuned_model/
+fine_tune_model/
+
+# 🔥 Ignore datasets (except one)
+*.json
+!students_dataset.json
+
+# 🔥 Python
+__pycache__/
+*.pyc
+
+# 🔥 Environment
+nlp_env/
+venv/
+
+# 🔥 OS files
+.DS_Store
+Thumbs.db
