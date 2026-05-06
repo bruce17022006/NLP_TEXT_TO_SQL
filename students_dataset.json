@@ -770,5 +770,2085 @@
     {
         "input": "Translate English to Microsoft SQL Server query: get students with marks between 37 and 93 | Tables:\nStudents: id, name, marks, dept_id, age",
         "output": "SELECT * FROM Students WHERE marks BETWEEN 37 AND 93;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with holder_name greater than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with name greater than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average pname for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(pname) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where hire_date is 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where status is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pid less than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for category 'A' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average pname for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(pname) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average hire_date for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pname '2024-01-01' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where stock is more than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for category '1000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for category 'Sales' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for name 'Sales' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for price '50000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total acc_no of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(acc_no) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where holder_name is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top A employees by hire_date | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP A * FROM Employees ORDER BY hire_date DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where hire_date is not 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with salary greater than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with pname greater than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total stock of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for acc_no '50000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 products by stock | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 50000 * FROM Products ORDER BY stock DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average hire_date for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where price is not Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with stock less than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock < 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total name of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 employees by name | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 1000 * FROM Employees ORDER BY name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where category is not Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose category starts with 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with dept_id greater than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pname less than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for salary 'A' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total stock of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average category for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(category) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where category is not 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with name less than 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with acc_no less than 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no < 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total acc_no of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(acc_no) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with category less than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category < 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average acc_no for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(acc_no) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where acc_no is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where salary is not A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status 'Manoj' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where salary is A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pname '50000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 products by pid | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 1000 * FROM Products ORDER BY pid DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top A accounts by holder_name | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP A * FROM Accounts ORDER BY holder_name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with balance greater than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for category '1000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pname '1000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with status greater than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose id starts with Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id LIKE 'Sales%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name '50000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where category is more than A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for acc_no '2024-01-01' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose salary starts with 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where stock is more than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with category greater than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where stock is more than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pname starts with 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with holder_name greater than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with id less than A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where acc_no is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with status less than Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where category is more than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Sales * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with balance greater than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average name for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for hire_date 'A' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with status less than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose category starts with A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for price 'Sales' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with stock less than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock < 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total status of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(status) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for hire_date '2024-01-01' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where name is more than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with balance less than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with category greater than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Manoj * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with category greater than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where pname is A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose name starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with hire_date greater than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where holder_name is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for id 'Manoj' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with dept_id less than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where hire_date is more than A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average stock for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales accounts by holder_name | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Sales * FROM Accounts ORDER BY holder_name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pname is more than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where holder_name is not Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where status is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for stock 'Sales' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where pname is Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 products by price | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 2024-01-01 * FROM Products ORDER BY price DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with category less than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pid is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average stock for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where name is not Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 products by pid | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 1000 * FROM Products ORDER BY pid DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total acc_no of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(acc_no) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for acc_no 'Sales' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with balance less than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose category starts with Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category LIKE 'Sales%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where pid is 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pid less than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where acc_no is Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average pid for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(pid) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with price less than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where salary is not 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name 'A' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total price of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(price) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total dept_id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where pid is not 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where price is more than A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where id is A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total category of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(category) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pid of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pid) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where dept_id is A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average name for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose price starts with Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where dept_id is 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pid of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pid) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total holder_name of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(holder_name) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with price greater than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with price greater than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where pname is not 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose balance starts with Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pname of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pname) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with name less than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where balance is more than 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where status is 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pname '50000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where status is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where hire_date is more than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status '2024-01-01' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pid is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pid starts with Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid LIKE 'Sales%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where hire_date is not 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where salary is not A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose hire_date starts with 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pid is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average hire_date for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average hire_date for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where salary is 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pname of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pname) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for stock '2024-01-01' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where status is more than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status '1000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average salary for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(salary) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name '50000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 employees by dept_id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 2024-01-01 * FROM Employees ORDER BY dept_id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name 'Sales' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with stock greater than A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with id greater than 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with category greater than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average status for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(status) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where balance is not Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where status is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total price of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(price) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pid starts with 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with acc_no less than Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where name is more than Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with price less than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pid of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pid) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pname of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pname) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average stock for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where price is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with balance greater than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for stock '50000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where status is more than 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where name is A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pid less than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid < 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where dept_id is not 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for name 'Manoj' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with balance greater than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pid less than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid < 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose id starts with 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with stock less than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock < 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 products by stock | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 50000 * FROM Products ORDER BY stock DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with category less than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category < 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average stock for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose balance starts with Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance LIKE 'Sales%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with pid greater than A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where status is more than 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with name greater than Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where name is 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average name for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total hire_date of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales accounts by status | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Sales * FROM Accounts ORDER BY status DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where salary is 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where price is not 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where salary is more than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose balance starts with Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with acc_no less than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name '50000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where id is not 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with balance greater than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average acc_no for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(acc_no) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 employees by salary | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 1000 * FROM Employees ORDER BY salary DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pname less than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose acc_no starts with A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where salary is not A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where pid is not Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pid less than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid < 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where price is not Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total hire_date of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where salary is more than 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for salary '50000' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for price '1000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 products by pid | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 2024-01-01 * FROM Products ORDER BY pid DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where status is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where dept_id is more than A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with holder_name greater than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average acc_no for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(acc_no) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where name is more than 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where hire_date is more than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 accounts by status | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP 1000 * FROM Accounts ORDER BY status DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with acc_no greater than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for salary '50000' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pname is more than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with pid greater than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pname starts with 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total holder_name of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(holder_name) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where id is not Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Sales * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average holder_name for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(holder_name) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj products by price | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP Manoj * FROM Products ORDER BY price DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 employees by dept_id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 2024-01-01 * FROM Employees ORDER BY dept_id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total holder_name of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(holder_name) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose dept_id starts with Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total hire_date of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj employees by id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP Manoj * FROM Employees ORDER BY id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose name starts with Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pname starts with 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where name is 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales products by category | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP Sales * FROM Products ORDER BY category DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total salary of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(salary) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pid of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pid) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where acc_no is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose dept_id starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where holder_name is more than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where price is not 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where pid is 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose dept_id starts with 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with id less than A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where acc_no is more than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where stock is not 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pid starts with 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pname is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where id is not A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total status of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(status) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 products by price | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 2024-01-01 * FROM Products ORDER BY price DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with hire_date greater than A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 employees by dept_id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 2024-01-01 * FROM Employees ORDER BY dept_id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose hire_date starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with acc_no greater than 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where id is Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name '1000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for balance '50000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where status is not 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales products by pname | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP Sales * FROM Products ORDER BY pname DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total dept_id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pname is more than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where stock is not Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where balance is not Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status '1000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with id less than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status 'A' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP 2024-01-01 * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where status is Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total name of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status 'Sales' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where id is not 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average stock for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(stock) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average price for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(price) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top A accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP A * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with pid greater than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for balance 'Manoj' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose acc_no starts with Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no LIKE 'Sales%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for id '1000' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 accounts by balance | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP 50000 * FROM Accounts ORDER BY balance DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 employees by name | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 50000 * FROM Employees ORDER BY name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where pname is Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pname starts with 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where status is Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose holder_name starts with 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 products by stock | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 50000 * FROM Products ORDER BY stock DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where holder_name is not A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where category is 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where balance is 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with status less than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top A employees by name | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP A * FROM Employees ORDER BY name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where stock is not A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with status less than Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where balance is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where salary is more than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales employees by dept_id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP Sales * FROM Employees ORDER BY dept_id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for dept_id '50000' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where holder_name is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average price for products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT AVG(price) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for holder_name 'A' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for balance '2024-01-01' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where stock is 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where status is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with category greater than 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with category less than A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose balance starts with Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where category is not 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total holder_name of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(holder_name) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where stock is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with salary greater than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with dept_id greater than 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total category of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(category) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with stock less than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where balance is more than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj accounts by balance | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Manoj * FROM Accounts ORDER BY balance DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total price of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(price) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP 50000 * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pid 'A' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales accounts by acc_no | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Sales * FROM Accounts ORDER BY acc_no DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose stock starts with Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pname '1000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 products by pname | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 2024-01-01 * FROM Products ORDER BY pname DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where balance is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj products by stock | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP Manoj * FROM Products ORDER BY stock DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where hire_date is not A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with category greater than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose holder_name starts with 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 employees by name | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 50000 * FROM Employees ORDER BY name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with price less than 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total holder_name of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(holder_name) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where name is not Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pid is more than 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose price starts with 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales accounts by status | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Sales * FROM Accounts ORDER BY status DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with balance less than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average hire_date for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(hire_date) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 products by pid | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 2024-01-01 * FROM Products ORDER BY pid DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where name is more than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where stock is 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top A accounts by status | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP A * FROM Accounts ORDER BY status DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj accounts by holder_name | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Manoj * FROM Accounts ORDER BY holder_name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where status is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where stock is more than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where price is not Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price <> 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pname starts with 50000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname LIKE '50000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total dept_id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status '1000' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose price starts with 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with id greater than 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for dept_id 'Sales' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for hire_date 'Manoj' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where holder_name is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total dept_id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average salary for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(salary) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose salary starts with Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total name of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj accounts by status | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Manoj * FROM Accounts ORDER BY status DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Sales products by pid | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP Sales * FROM Products ORDER BY pid DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where acc_no is more than 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where status is Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where name is not 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total name of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(name) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where balance is A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where price is not 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees where dept_id is 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where hire_date is more than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 products by category | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 2024-01-01 * FROM Products ORDER BY category DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where pid is not 1000 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products where pid is not A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid <> 'A';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 products by price | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 1000 * FROM Products ORDER BY price DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for category '50000' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose holder_name starts with A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose salary starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose id starts with 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose pid starts with 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid LIKE '2024-01-01%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj accounts by balance | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Manoj * FROM Accounts ORDER BY balance DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with acc_no less than Sales | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with status less than Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 employees by id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 2024-01-01 * FROM Employees ORDER BY id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where balance is 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where acc_no is more than 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show products details for pid '2024-01-01' | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average dept_id for employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT AVG(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top A employees by dept_id | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP A * FROM Employees ORDER BY dept_id DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose name starts with Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name LIKE 'Sales%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where salary is not 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where dept_id is not 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with acc_no less than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where category is Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category = 'Sales';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with salary less than 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary < 1000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show accounts details for status '2024-01-01' | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where holder_name is 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 50000 employees by name | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 50000 * FROM Employees ORDER BY name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts whose status starts with A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE status LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products whose price starts with A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE price LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose name starts with 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list accounts where balance is more than 2024-01-01 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where balance is not 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance <> '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total balance of all accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT SUM(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with name less than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name < 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where holder_name is not Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top Manoj accounts by status | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP Manoj * FROM Accounts ORDER BY status DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with pname less than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pname < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where balance is 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pid of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pid) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total dept_id of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(dept_id) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: average balance for accounts | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT AVG(balance) FROM Accounts;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for dept_id '2024-01-01' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts with holder_name less than Manoj | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name < Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total salary of all employees | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(salary) FROM Employees;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for id '50000' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where dept_id is more than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose hire_date starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 employees by name | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT TOP 2024-01-01 * FROM Employees ORDER BY name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where holder_name is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE holder_name <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose hire_date starts with 1000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date LIKE '1000%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with id greater than 50000 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id > 50000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products where pid is 2024-01-01 | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid = '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with dept_id greater than 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id > 2024-01-01;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose name starts with Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 1000 products by stock | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT TOP 1000 * FROM Products ORDER BY stock DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: total pname of all products | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT SUM(pname) FROM Products;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts where acc_no is not 1000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no <> '1000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list products where pid is more than Manoj | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE pid > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with category less than Sales | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE category < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find accounts with acc_no greater than A | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE acc_no > A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 2024-01-01 accounts by holder_name | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT TOP 2024-01-01 * FROM Accounts ORDER BY holder_name DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employees with name less than Sales | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name < Sales;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get accounts where balance is 50000 | Tables:\nAccounts: acc_no, holder_name, balance, status\nTransactions: tid, acc_no, amount, type",
+        "output": "SELECT * FROM Accounts WHERE balance = '50000';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose salary starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE salary LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get products with stock less than A | Tables:\nProducts: pid, pname, price, category, stock\nOrders: oid, pid, qty, order_date",
+        "output": "SELECT * FROM Products WHERE stock < A;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees where name is more than Manoj | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE name > Manoj;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show employees details for dept_id 'Manoj' | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE dept_id = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees where id is not 2024-01-01 | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE id <> '2024-01-01';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose hire_date starts with A | Tables:\nEmployees: id, name, salary, dept_id, hire_date\nDepartments: dept_id, dept_name",
+        "output": "SELECT * FROM Employees WHERE hire_date LIKE 'A%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employee names and their department names | Tables:\nEmployees: id, name, salary, dept_id\nDepartments: dept_id, dept_name",
+        "output": "SELECT Employees.name, Departments.dept_name FROM Employees JOIN Departments ON Employees.dept_id = Departments.dept_id;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find all details for employee named Manoj | Tables:\nEmployees: id, name, salary, dept_id",
+        "output": "SELECT * FROM Employees WHERE name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 5 products with category names | Tables:\nProducts: pid, pname, price, cat_id\nCategories: cat_id, cat_name",
+        "output": "SELECT TOP 5 Products.pname, Categories.cat_name FROM Products JOIN Categories ON Products.cat_id = Categories.cat_id ORDER BY Products.price DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list employees not named Manoj | Tables:\nEmployees: id, name, salary",
+        "output": "SELECT * FROM Employees WHERE name <> 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: show orders for customer Manoj | Tables:\nOrders: oid, cust_id, amount\nCustomers: cust_id, cust_name",
+        "output": "SELECT Orders.* FROM Orders JOIN Customers ON Orders.cust_id = Customers.cust_id WHERE Customers.cust_name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with price greater than 500 and stock less than 10 | Tables:\nInventory: pid, pname, price, stock",
+        "output": "SELECT * FROM Inventory WHERE price > 500 AND stock < 10;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get account transactions for holder Manoj | Tables:\nAccounts: acc_id, holder_name\nTransactions: tid, acc_id, amount",
+        "output": "SELECT Transactions.* FROM Transactions JOIN Accounts ON Transactions.acc_id = Accounts.acc_id WHERE Accounts.holder_name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get total salary of employees in 'IT' department | Tables:\nEmployees: id, name, salary, dept_id\nDepartments: dept_id, dept_name",
+        "output": "SELECT SUM(salary) FROM Employees JOIN Departments ON Employees.dept_id = Departments.dept_id WHERE Departments.dept_name = 'IT';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees whose name starts with Manoj | Tables:\nEmployees: id, name, dept_id",
+        "output": "SELECT * FROM Employees WHERE name LIKE 'Manoj%';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get projects handled by department 10 | Tables:\nProjects: proj_id, proj_name, dept_id\nDepartments: dept_id, dept_name",
+        "output": "SELECT Projects.proj_name FROM Projects JOIN Departments ON Projects.dept_id = Departments.dept_id WHERE Departments.dept_id = 10;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list students with their course titles | Tables:\nStudents: id, name, course_id\nCourses: course_id, title",
+        "output": "SELECT Students.name, Courses.title FROM Students JOIN Courses ON Students.course_id = Courses.course_id;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find employees with salary between 30000 and 70000 | Tables:\nEmployees: id, name, salary",
+        "output": "SELECT * FROM Employees WHERE salary BETWEEN 30000 AND 70000;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get top 10 expensive orders with customer details | Tables:\nOrders: oid, total, cid\nCustomers: cid, cname",
+        "output": "SELECT TOP 10 Orders.*, Customers.cname FROM Orders JOIN Customers ON Orders.cid = Customers.cid ORDER BY Orders.total DESC;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: count how many orders Manoj has placed | Tables:\nOrders: oid, cid\nCustomers: cid, cname",
+        "output": "SELECT COUNT(Orders.oid) FROM Orders JOIN Customers ON Orders.cid = Customers.cid WHERE Customers.cname = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find products with stock equal to 0 | Tables:\nProducts: pid, pname, stock",
+        "output": "SELECT * FROM Products WHERE stock = 0;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: list names of students who scored more than 90 in any subject | Tables:\nStudents: sid, name\nMarks: sid, score, subject",
+        "output": "SELECT DISTINCT Students.name FROM Students JOIN Marks ON Students.sid = Marks.sid WHERE Marks.score > 90;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get department names with more than 5 employees | Tables:\nEmployees: id, dept_id\nDepartments: dept_id, dept_name",
+        "output": "SELECT Departments.dept_name FROM Departments JOIN Employees ON Departments.dept_id = Employees.dept_id GROUP BY Departments.dept_name HAVING COUNT(Employees.id) > 5;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: find Manoj's salary | Tables:\nEmployees: name, salary",
+        "output": "SELECT salary FROM Employees WHERE name = 'Manoj';"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get all products not in category 5 | Tables:\nProducts: pid, pname, cat_id",
+        "output": "SELECT * FROM Products WHERE cat_id <> 5;"
+    },
+    {
+        "input": "Translate English to Microsoft SQL Server query: get employee names hired after 2023 | Tables:\nEmployees: name, hire_date",
+        "output": "SELECT name FROM Employees WHERE hire_date > '2023-12-31';"
     }
 ]
